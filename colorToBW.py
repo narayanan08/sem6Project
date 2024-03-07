@@ -3,7 +3,6 @@ import os
 
 def convert_to_black_and_white(input_image_folder,output_image_folder):
     imageFiles=os.listdir(input_image_folder)
-    print(imageFiles)
     threshold=128
     for imageFile in imageFiles:
         input_image_path=input_image_folder+"\\"+imageFile
@@ -14,8 +13,7 @@ def convert_to_black_and_white(input_image_folder,output_image_folder):
         output_image_path=output_image_folder+"\\"+imageFile
         black_and_white_image.save(output_image_path)
 
-input_path="D:\\badriFiles\\6thsem\\ML\\imageDataset\\bars\\colorImages"
-output_path="D:\\badriFiles\\6thsem\\ML\\imageDataset\\bars\\bwImages"
+input_path=r"D:\badriFiles\6thsem\ML\imageDataset\mangalsutra\colorImages"
+output_path=r"D:\badriFiles\6thsem\ML\imageDataset\mangalsutra\bwImages"
 convert_to_black_and_white(input_path,output_path)
 
-"D:\badriFiles\6thsem\ML\imageDataset\programs"
