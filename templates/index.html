@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jewellery Detection</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index.css')}}">
+    </head>
+    <body>
+        <h1>Object Detection</h1>
+        <div class="upload">
+            <div class="form1">
+                <form id="detect_object" action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="somefile">Upload here</label><br>
+                    <input type="file" name="file" id="somefile" accept="image/jpeg, image/jpg, image/png, image/webp" ><br>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
