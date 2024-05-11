@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Image display
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Uploaded image</h2>
+        <img src="{{url_for('static',filename='uploads/'+filename)}}" alt="{{filename}}">
+    </body>
+</html>
